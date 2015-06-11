@@ -108,6 +108,26 @@
 					nec posuere arcu dictum vel. Aliquam pharetra vitae quam vel tincidunt. Suspendisse potenti. Curabitur non ligula condimentum, 
 					accumsan neque sit amet, tincidunt velit. Quisque sit amet ex tempus, aliquam elit et, commodo tellus.</p>									
 				</div><!-- end div fifty -->
+				
+				<h1>Vertical Align Stuff</h1>
+				<div class="dimensions-one-hundred">
+					<div class="child"><p>I am vertically aligned in the middle</p></div>
+				</div><!-- end div dimensions-one-hundred -->
+				
+				<h1>Mega Nav Menu</h1>
+				<div class="mega-menu">
+					<ul>
+						<?php for( $i = 0; $i <= 9; $i++ ) : ?>
+							<li><a href="#">Link <?php echo $i + 1; ?></a>
+								<ul>
+									<?php for( $mm = 0; $mm <= 4; $mm++ ) : ?>
+										<li><a href="<?php echo $mm + 1; ?>">Submenu Link <?php echo $mm + 1; ?></a></li>
+									<?php endfor; ?>
+								</ul>
+							</li>
+						<?php endfor; ?>
+					</ul>
+				</div>
 			</div><!-- end div content -->
 			
 			<div id="footer">
