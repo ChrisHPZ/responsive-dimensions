@@ -6,4 +6,7 @@ Reason being is the HTML is being rendered through a series of PHP for loops.  N
 
 6/11/2015 Added mega-menu support
 
+7/10/2015 Removed background colors from <div>'s
+7/10/2015 Added jQuery resize function for demo purposes
+
 A live example of this project as it currently stands can be viewed at http://www.cdemarco.net/responsive-dimensions
