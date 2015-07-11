@@ -6,12 +6,14 @@ $(document).ready(function(){
 	var twenty_five = $(".dimensions-twenty-five").outerWidth();
 	var ten = $(".dimensions-ten").outerWidth();
 	var seventy = $(".dimensions-seventy").outerWidth();
-	$('.dimensions-fifty').append(" <br />Calculated Width: " + fifty + "px");
-	$('.dimensions-fourty').append(" <br />Calculated Width: " + fourty + "px");
-	$('.dimensions-thirty-three').append(" <br />Calculated Width: " + thirty_three + "px");
-	$('.dimensions-twenty-five').append(" <br />Calculated Width: " + twenty_five + "px");
-	$('.dimensions-ten').append(" <br />Calculated Width: " + ten + "px");
-	$(".dimensions-seventy").append(" <br />Calculated Width: " + seventy + "px");
+	$(window).on('resize', function(){
+		$('.dimensions-fifty').append(" <br />Calculated Width: " + fifty + "px");
+		$('.dimensions-fourty').append(" <br />Calculated Width: " + fourty + "px");
+		$('.dimensions-thirty-three').append(" <br />Calculated Width: " + thirty_three + "px");
+		$('.dimensions-twenty-five').append(" <br />Calculated Width: " + twenty_five + "px");
+		$('.dimensions-ten').append(" <br />Calculated Width: " + ten + "px");
+		$(".dimensions-seventy").append(" <br />Calculated Width: " + seventy + "px");
+	});
 });
 
 $(document).ready(function(){
@@ -27,4 +29,5 @@ $(document).ready(function(){
 			$('#sidebar').text('An Error Occured');
 		}
 	});
+});
 });
