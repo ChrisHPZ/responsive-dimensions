@@ -1,0 +1,1 @@
+I am content loaded from <code>$.ajax()</code>
